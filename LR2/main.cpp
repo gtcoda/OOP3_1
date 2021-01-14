@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "pch.h"
+
 using namespace std;
 #include <iostream>
 #include <sstream>
@@ -14,51 +14,11 @@ using namespace std;
 #include "Lab2.h"
 
 int main() {
-	//	Lab2 m = new Lab2();
-	//	m.exec();
+		// переходим в консоли на русский язык
+		system("chcp 1251 > nul");
+		Lab2 m = new Lab2();
+		m.exec();
+		system("pause");
 
-	std::string input;
-	std::stringstream output;
-	std::vector<string> tok;
-
-	cout << "Enter text:" << endl;
-	std::getline(cin, input);
-
-	char * pch = strtok((char *)input.c_str(), " ,.-"); // во втором параметре указаны разделитель (пробел, запятая, точка, тире)
-
-	while (pch != NULL) {
-		string str = pch;
-		tok.push_back(pch);
-		std::cout << pch << "\n\r";
-		pch = strtok(NULL, " ,.-");
-
-	}
-
-	for (vector<string>::iterator it = tok.begin(); it < tok.end(); it++) {
-		(*it).c_str();
-
-		if (isdigit((*it).c_str()[0])) {
-			int m = atoi((*it).c_str());
-			char stri[6] = "";
-			_itoa_s(m, stri, 6, 16);
-
-			for (int r = 0; (r < 6) && (stri[r]); r++) {
-				if (stri[r] >= 'a' && stri[r] <= 'z') stri[r] -= 'z' - 'Z';
-			}
-
-			string str = stri;
-			str = "0x" + str;
-			(*it) = str;
-		}
-	}
-
-	string s;
-
-	for (vector<string>::iterator it = tok.begin(); it < tok.end(); it++) {
-		s = s + " " + (*it);
-	}
-
-	s.erase(0, 1); // удалим первый пробел
-	cout << s;
 
 }

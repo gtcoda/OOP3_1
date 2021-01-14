@@ -1,10 +1,11 @@
 #include "Lab2.h"
 
+std::string Lab2::input = "";
+std::string Lab2::output = "";
 
 void Lab2::exec() {
 
-	std::string input;
-	std::stringstream output;
+
 	std::vector<string> tok;
 
 	cout << "Enter text:" << endl;
@@ -15,7 +16,7 @@ void Lab2::exec() {
 	while (pch != NULL) {
 		string str = pch;
 		tok.push_back(pch);
-		std::cout << pch << "\n\r";
+		
 		pch = strtok(NULL, " ,.-");
 
 	}
@@ -45,6 +46,8 @@ void Lab2::exec() {
 	}
 
 	s.erase(0, 1); // удалим первый пробел
+
+
 	cout << s;
 }
 
