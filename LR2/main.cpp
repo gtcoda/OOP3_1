@@ -14,7 +14,7 @@ using namespace std;
 #include "Lab2.h"
 
 int main() {
-		// переходим в консоли на русский язык
+		// РїРµСЂРµС…РѕРґРёРј РІ РєРѕРЅСЃРѕР»Рё РЅР° СЂСѓСЃСЃРєРёР№ СЏР·С‹Рє
 		system("chcp 1251 > nul");
 		Lab2 m = new Lab2();
 		m.exec();

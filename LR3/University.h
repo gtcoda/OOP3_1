@@ -15,7 +15,7 @@ class University {
 private:
 		string n_name;
 		int n_NoF;
-		string n_status; // R - республиканский, O - обласной, K - краевой, S - городской
+		string n_status; // R - СЂРµСЃРїСѓР±Р»РёРєР°РЅСЃРєРёР№, O - РѕР±Р»Р°СЃРЅРѕР№, K - РєСЂР°РµРІРѕР№, S - РіРѕСЂРѕРґСЃРєРѕР№
 
 public:
 	University();

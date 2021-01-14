@@ -10,10 +10,10 @@ using namespace std;
 
 
 int main() {
-	// ÔÂÂıÓ‰ËÏ ‚ ÍÓÌÒÓÎË Ì‡ ÛÒÒÍËÈ ˇÁ˚Í
+	// –ø–µ—Ä–µ—Ö–æ–¥–∏–º –≤ –∫–æ–Ω—Å–æ–ª–∏ –Ω–∞ —Ä—É—Å—Å–∫–∏–π —è–∑—ã–∫
 	system("chcp 1251 > nul");
 
-	University_all s("√√“”", 27, "R");
+	University_all s("–ì–ì–¢–£", 27, "R");
 
 	s.show_name();
 	s.show_number();
